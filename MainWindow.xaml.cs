@@ -45,8 +45,10 @@ namespace color_game
             int randNum1 = _random.Next(_colors.Length);
             int randNum2 = _random.Next(_colors.Length);
             string fakeLabelText = _colors[randNum2];
+
             _pickedColor = _colors[randNum1];
             colorDisplay.Foreground = PaintColor(_pickedColor);
+
             //if (fakeLabelText == _pickedColor) return;
             colorDisplay.Content = fakeLabelText;
             GenerateButtons();
